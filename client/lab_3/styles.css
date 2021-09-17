@@ -3,14 +3,104 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  .top-bar{
+    background-color: rgba(0,139, 139, 1);
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+  }
   
   .menu-container {
     color: #fff;
-    background-color: #5995DA;  /* Blue */
+    background-color: #5995DA;
     padding: 20px 0;
+    display: flex;
+    justify-content: center;
   }
   
   .menu {
-    border: 1px solid #fff;  /* For debugging */
+    border: 1px solid #fff;
     width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .links{
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .main-page{
+    margin-left: 20px;
+  }
+
+  .header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .group,
+  .github{
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  .photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+  }
+
+  .first-item{
+    order: 1;
+  }
+
+  .last-item{
+    order: -1;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .footer-one,
+  .footer-three {
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
   }
