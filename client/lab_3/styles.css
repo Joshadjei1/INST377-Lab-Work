@@ -4,6 +4,10 @@
     box-sizing: border-box;
   }
 
+  a{
+    text-decoration: none;
+  }
+
   .top-bar{
     background-color: rgba(0,139, 139, 1);
     padding: 10px 0;
@@ -32,7 +36,8 @@
     justify-content: flex-end;
   }
 
-  .main-page{
+  .main-page,
+  .database-demos{
     margin-left: 20px;
   }
 
