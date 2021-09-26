@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .top-bar{
+    background-color: rgba(0,139, 139, 1);
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+  }
+  
+  .menu-container {
+    color: #fff;
+    background-color: #5995DA;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu {
+    border: 1px solid #fff;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .links{
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .main-page,
+  .database-demos{
+    margin-left: 20px;
+    color:white;
+  }
+
+  .header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .group,
+  .github{
+    align-self: flex-end;
+    margin-bottom: 20px;
+    color: #5995DA;
+  }
+
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 300px;
+    position: auto;
+  }
+
+  .photo-grid-container .photo-grid-item,
+  .photo-grid-container .photo-grid-item--hidden{
+      display: none;
+  }
+
+  .photo-grid-container .photo-grid-item img{
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+  }
+
+  .photo-grid-container .photo-grid-item--visible{
+      display: block;
+  }
+  
+  .photo-grid-container .carousel_actions{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  .photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .footer-one,
+  .footer-three {
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
+  }
