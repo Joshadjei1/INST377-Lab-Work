@@ -118,6 +118,7 @@ document.addEventListener('DOMContentLoaded' , () => {
     }
 
     function control(e) {
+        doodler.style.bottom = doodlerBottomSpace + 'px'
         if (e.key === 'ArrowLeft'){
             moveLeft()
         } else if (e.key === 'ArrowRight'){
@@ -128,7 +129,7 @@ document.addEventListener('DOMContentLoaded' , () => {
     }
 
     function moveLeft(){
-        if  (isGoingRight){
+        if (isGoingRight){
             clearInterval(rightTimerId)
             isGoingRight = false
         }
@@ -158,8 +159,8 @@ document.addEventListener('DOMContentLoaded' , () => {
     function moveStraight(){
         isGoingRight = false
         isGoingLeft = false
-        clearInterval(rightTimerId)
         clearInterval(leftTimerId)
+        clearInterval(rightTimerId)
     }
 
     function start(){
